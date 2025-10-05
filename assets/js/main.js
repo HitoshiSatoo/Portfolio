@@ -89,12 +89,12 @@
   }
   window.addEventListener('load', aosInit);
 
-  /**
+/**
    * Init typed.js
    */
-  const selectTyped = document.querySelector('.typed');
-  if (selectTyped) {
-    let typed_strings = selectTyped.getAttribute('data-typed-items');
+  const typed = document.querySelector('.typed');
+  if (typed) {
+    let typed_strings = typed.getAttribute('data-typed-items');
     typed_strings = typed_strings.split(',');
     new Typed('.typed', {
       strings: typed_strings,
