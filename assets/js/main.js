@@ -76,7 +76,7 @@
   window.addEventListener('load', toggleScrollTop);
   document.addEventListener('scroll', toggleScrollTop);
 
-  /**
+/**
    * Animation on scroll function and init
    */
   function aosInit() {
@@ -89,13 +89,12 @@
   }
   window.addEventListener('load', aosInit);
 
-/**
+  /**
    * Init typed.js
    */
   const typed = document.querySelector('.typed');
   if (typed) {
-    let typed_strings = typed.getAttribute('data-typed-items');
-    typed_strings = typed_strings.split(',');
+    let typed_strings = typed.getAttribute('data-typed-items').split(',');
     new Typed('.typed', {
       strings: typed_strings,
       loop: true,
